@@ -1,4 +1,4 @@
-var purchase1 = {
+/*var purchase1 = {
   shoePrice: 120,
   tax: 1.6,
   totalprice: function () {
@@ -15,7 +15,7 @@ var purchase2 = {
     console.log("calculation: ", cal);
   },
 };
-purchase2.totalprice();
+purchase2.totalprice();*/
 //assignment
 
 class Person {
@@ -51,6 +51,13 @@ function manager() {
   manager.doSomethingFun();
   return manager;
 }
-
+var per2 = new Person();
 // Test the manager function
-console.log(manager());
+/*console.log(manager());
+console.log(Object.keys(per2));
+console.log(Object.values(per2));
+console.log(Object.entries(per2));*/
+
+for (const key of Object.keys(per2)) {
+  console.log("key: ", per2[key]);
+}
