@@ -57,3 +57,16 @@ var per2 = new Person();
 console.log(Object.keys(per2));
 console.log(Object.values(per2));
 console.log(Object.entries(per2));*/
+for (const key of Object.keys(per2)) {
+  console.log("key: ", per2[key]);
+}
+
+const obj = { a: 1, b: 2 };
+for (let key in obj) {
+  console.log(key); // "a", "b"
+}
+
+const arr = [10, 20, 30];
+for (let val of arr) {
+  console.log(val); // 10, 20, 30
+}
