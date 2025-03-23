@@ -14,7 +14,27 @@ let top7 = [...top3, "England", "UAE", "Newzeland", "Italy"];
 //showitem(top3[0], top3[1], top3[2]);
 showitem(...top7);
 
-const { a, b, ...rest } = { a: 1, b: 2, c: 3, d: 4 };
-console.log(a); // Output: 1
-console.log(b); // Output: 2
-console.log(rest); // Output: { c: 3, d: 4 }
+// Part 1: Separate Array Elements using spread operator
+const topSixRestaurants = [
+  "Chick-fil-A",
+  "In-N-Out",
+  "Chipotle",
+  "McDonald's",
+  "Taco Bell",
+  "KFC",
+];
+const [first, second, third, ...remaining] = topSixRestaurants;
+console.log(`First restaurant: ${first}`);
+console.log(`Second restaurant: ${second}`);
+console.log(`Third restaurant: ${third}`);
+console.log(`Remaining restaurants: ${remaining}`);
+
+// Part 2: Handle Unknown Function Arguments
+function unknownArgs(...args) {
+  // Your code here
+  for (let i = 0; i < args.length; i++) {
+    console.log(args[i]);
+  }
+}
+unknownArgs(1, 2, 3, 4, 5);
+unknownArgs("a", "b", "c");
