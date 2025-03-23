@@ -38,3 +38,23 @@ function unknownArgs(...args) {
 }
 unknownArgs(1, 2, 3, 4, 5);
 unknownArgs("a", "b", "c");
+
+// Part 3: Merge Arrays
+const favoriteBaseballTeams = [
+  "Yankees",
+  "Mets",
+  "Dodgers",
+  "Giants",
+  "Red Sox",
+  "Cubs",
+];
+const favoriteFootballTeams = [
+  "Patriots",
+  "Giants",
+  "Jets",
+  "Eagles",
+  "Steelers",
+  "Cowboys",
+];
+const favoriteTeams = [...favoriteBaseballTeams, ...favoriteFootballTeams];
+console.log(favoriteTeams);
